@@ -1,0 +1,412 @@
+/*竖屏*/
+@-webkit-keyframes loadpage{
+	0%{
+		-webkit-transform: translateY(0);
+	}
+	100%{
+		-webkit-transform: translateY(-100rem);
+		display: none;
+	}
+}
+@keyframes loadpage{
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(-100rem);
+		display: none;
+	}
+}
+
+@-webkit-keyframes loadpageball{
+	0%{
+		-webkit-transform: rotate(0);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes loadpageball{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes homepagelogo{
+	0%{
+		margin-top: 2rem;
+		width: 9rem;
+		height: 10.4rem;
+	}
+	100%{
+		margin-top: 0.3rem;
+		width: 4rem;
+		height: 4.6rem;
+	}
+}
+@keyframes homepagelogo{
+	0%{
+		margin-top: 2rem;
+		width: 9rem;
+		height: 10.4rem;
+	}
+	100%{
+		margin-top: 0.3rem;
+		width: 4rem;
+		height: 4.6rem;
+	}
+}
+
+@-webkit-keyframes move{
+	0%{
+		-webkit-transform: rotateX(-90deg);
+	}
+	20%{
+		-webkit-transform: rotateX(-45deg);
+	}
+	40%{
+		-webkit-transform: rotateX(0);
+	}
+	60%{
+		-webkit-transform: rotateX(45deg);
+	}
+	80%{
+		-webkit-transform: rotateX(20deg);
+	}
+	100%{
+		-webkit-transform: rotateX(0deg);
+	}
+}
+@keyframes move{
+	0%{
+		transform: rotateX(-90deg);
+	}
+	20%{
+		transform: rotateX(-45deg);
+	}
+	40%{
+		transform: rotateX(0);
+	}
+	60%{
+		transform: rotateX(45deg);
+	}
+	80%{
+		transform: rotateX(20deg);
+	}
+	100%{
+		transform: rotateX(0deg);
+	}
+}
+
+@-webkit-keyframes move1{
+	0%{
+		-webkit-transform: rotateX(-90deg);
+	}
+	20%{
+		-webkit-transform: rotateX(-45deg);
+	}
+	40%{
+		-webkit-transform: rotateX(0);
+	}
+	60%{
+		-webkit-transform: rotateX(45deg);
+	}
+	80%{
+		-webkit-transform: rotateX(20deg);
+	}
+	100%{
+		-webkit-transform: rotateX(0deg);
+	}
+}
+@keyframes move1{
+	0%{
+		transform: rotateX(-90deg);
+	}
+	20%{
+		transform: rotateX(-45deg);
+	}
+	40%{
+		transform: rotateX(0);
+	}
+	60%{
+		transform: rotateX(45deg);
+	}
+	80%{
+		transform: rotateX(20deg);
+	}
+	100%{
+		transform: rotateX(0);
+	}
+}
+
+@-webkit-keyframes move2{
+	0%{
+		opacity: 0;
+		font-size: 0rem;
+	}
+	100%{
+		opacity: 1;
+		font-size: 1.3rem;
+	}
+}
+@keyframes move2{
+	0%{
+		opacity: 0;
+		font-size: 0rem;
+	}
+	100%{
+		opacity: 1;
+		font-size: 1.3rem;
+	}
+}
+
+@-webkit-keyframes ren-tou{
+	0%{
+		-webkit-transform: translateY(-0.15rem);
+	}
+	100%{
+		-webkit-transform: translateY(0rem);
+	}
+}
+@keyframes ren-tou{
+	0%{
+		transform: translateY(-0.15rem);
+	}
+	100%{
+		transform: translateY(0rem);
+	}
+}
+
+@-webkit-keyframes ren-shen{
+	0%{
+		-webkit-transform: rotateZ(2deg);
+	}
+	100%{
+		-webkit-transform: rotateZ(-2deg);
+	}
+}
+@keyframes ren-shen{
+	0%{
+		transform: rotateZ(2deg);
+	}
+	100%{
+		transform: rotateZ(-2deg);
+	}
+}
+
+@keyframes ren-lefts{
+	0% {
+    	transform: rotateZ(-10deg);
+	}
+	25% {
+	    transform: rotateZ(-10deg);
+	}
+	50% {
+	    transform: rotateZ(-5deg);
+	}
+	75% {
+	    transform: rotateZ(0deg);
+	}
+	90% {
+	    transform: rotateZ(-10deg);
+	}
+	100% {
+	    transform: rotateZ(-10deg);
+	}
+}
+@-webkit-keyframes ren-lefts{
+	0% {
+   		-webkit-transform: rotateZ(-10deg);
+	}
+	25% {
+	    -webkit-transform: rotateZ(-10deg);
+	}
+	50% {
+	     -webkit-transform: rotateZ(-5deg);
+	}
+	75% {
+	     -webkit-transform: rotateZ(0deg);
+	}
+	90% {
+	    -webkit-transform: rotateZ(-10deg);
+	}
+	100% {
+	    -webkit-transform: rotateZ(-10deg);
+	}
+}
+
+@keyframes ren-rights{
+	0% {
+   		transform: rotateZ(10deg);
+	}
+	25% {
+	    transform: rotateZ(10deg);
+	}
+	50% {
+	    transform: rotateZ(5deg);
+	}
+	75% {
+	    transform: rotateZ(0deg);
+	}
+	90% {
+	    transform: rotateZ(10deg);
+	}
+	100% {
+	    transform: rotateZ(10deg);
+	}
+}
+@-webkit-keyframes ren-rights{
+	0% {
+     	-webkit-transform: rotateZ(10deg);
+	}
+	25% {
+	    -webkit-transform: rotateZ(10deg);
+	}
+	50% {
+	    -webkit-transform: rotateZ(5deg);
+	}
+	75% {
+	    -webkit-transform: rotateZ(0deg);
+	}
+	90% {
+	    -webkit-transform: rotateZ(10deg);
+	}
+	100% {
+	    -webkit-transform: rotateZ(10deg);
+	}
+}
+
+@-webkit-keyframes ren-balls{
+	0% {
+   		-webkit-transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg);
+	}
+	25% {
+	    -webkit-transform: translate3d(2.25rem, -1.25rem, 0rem) rotateZ(10deg);
+	}
+	50% {
+	    -webkit-transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg);
+	}
+	75% {
+	    -webkit-transform: translate3d(-2.25rem, -1.25rem, 0rem) rotateZ(-10deg);
+	}
+	100% {
+	    -webkit-transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg);
+	}
+}
+@keyframes ren-balls{
+	0% {
+    transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg);
+	}
+	25% {
+	    transform: translate3d(2.25rem, -1.25rem, 0rem) rotateZ(10deg);
+	}
+	50% {
+	    transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg);
+	}
+	75% {
+	    transform: translate3d(-2.25rem, -1.25rem, 0rem) rotateZ(-10deg);
+	}
+	100% {
+	    transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg);
+	}
+}
+
+/*横屏*/
+@-webkit-keyframes homepagelogos{
+	0%{
+		margin-top: 0.75rem;
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+	20%{
+		margin-top: 0.65rem;
+		width: 3.2rem;
+		height: 3.2rem;
+	}
+	40%{
+		margin-top: 0.55rem;
+		width: 2.9rem;
+		height: 2.9rem;
+	}
+	60%{
+		margin-top: 0.45rem;
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	80%{
+		margin-top: 0.35rem;
+		width: 2.1rem;
+		height: 2.1rem;
+	}
+	100%{
+		margin-top: 0.25rem;
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+}
+@-webkit-keyframes move2s{
+	0%{
+		opacity: 0;
+		font-size: 0rem;
+	}
+	10%{
+		opacity: 0.1;
+		font-size: 0.15rem;
+	}
+	20%{
+		opacity: 0.2;
+		font-size: 0.2rem;
+	}
+	30%{
+		opacity: 0.3;
+		font-size: 0.25rem;
+	}
+	40%{
+		opacity: 0.4;
+		font-size: 0.3rem;
+	}
+	50%{
+		opacity: 0.5;
+		font-size: 0.35rem;
+	}
+	60%{
+		opacity: 0.6;
+		font-size: 0.4rem;
+	}
+	70%{
+		opacity: 0.7;
+		font-size: 0.45rem;
+	}
+	80%{
+		opacity: 0.8;
+		font-size: 0.5rem;
+	}
+	90%{
+		opacity: 0.9;
+		font-size: 0.55rem;
+	}
+	100%{
+		opacity: 1;
+		font-size: 0.6rem;
+	}
+}
+@-webkit-keyframes ren-ballss{
+	0% {
+    transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg);
+	}
+	25% {
+	    transform: translate3d(1.4rem, -1rem, 0rem) rotateZ(7deg);
+	}
+	50% {
+	    transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg);
+	}
+	75% {
+	    transform: translate3d(-1.4rem, -1rem, 0rem) rotateZ(-7deg);
+	}
+	100% {
+	    transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg);
+	}
+}

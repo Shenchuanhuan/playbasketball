@@ -1,0 +1,438 @@
+@rem:20rem;
+/*loadPage*/
+.loadPage {
+  position: fixed;
+  width: 320/@rem;
+    height: 100%;
+  background: #d8583a;
+  left: 0/@rem;
+  top: 0/@rem;
+  z-index: 6;
+  -webkit-animation: loadpage 1s 2s normal both;
+  animation: loadpage 1s  2s normal both;
+}
+.loadPage-logo {
+  width: 180/@rem;
+  height: 208/@rem;
+  display: block;
+  margin: 40/@rem auto 0/@rem;
+  transform: scale(1);
+}
+.loadPage-ball {
+  width: 80/@rem;
+  height: 80/@rem;
+  display: block;
+  margin: 15/@rem auto 0/@rem;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-animation: loadpageball 1s linear infinite;
+  animation: loadpageball 1s linear infinite;
+}
+.loadPage-loading {
+  display: block;
+  width: 107/@rem;
+  height: 40/@rem;
+  margin: 26/@rem auto 0;
+}
+/*end loadPage*/
+
+/*homePage*/
+.homePage {
+  width: 320/@rem;
+  height: 100%;
+  background: #ffc97e url(../../image/loadPage/homePage.gif);
+  background-size: 29/@rem 29/@rem;
+  position: absolute;
+  left: 0/@rem;
+  top: 0/@rem;
+  display: none;
+}
+.homePage-logo {
+  width: 180/@rem;
+  height: 208/@rem;
+  display: block;
+  margin: 40/@rem auto 0;
+  position: relative;
+  left: 0/@rem;
+  top: 0/@rem;
+  z-index: 5;
+  -webkit-animation: homepagelogo 0.4s  0.07s normal both;
+  animation: homepagelogo 0.4s  0.07s normal both;
+}
+.homePage-about {
+  width: 50/@rem;
+  height: 50/@rem;
+  line-height: 50/@rem;
+  font-size: 12/@rem;
+  position: absolute;
+  right: 0/@rem;
+  top: 0/@rem;
+  color: #fff;
+  background: #eda949;
+  text-align: center;
+  z-index: 6;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+.homePage-ziti {
+  width: 276/@rem;
+  height: 87/@rem;
+  display: block;
+  margin: 11/@rem auto 0/@rem;
+  position: relative;
+  -webkit-perspective: 20rem;
+  perspective: 20rem;
+  transform-style: preserve-3d;
+}
+.homePage-img {
+  width: 120/@rem;
+  height: 65/@rem;
+  color: #d8583a;
+  font-family: 'CoreCircusPierrot2';
+  font-size: 65/@rem;
+  line-height: 65/@rem;
+  font-weight: 400/@rem;
+  letter-spacing: -14/@rem;
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation: move 0.65s  0.2s normal both;
+  animation: move 0.65s  0.2s normal both;
+
+}
+.homePage-span1 {
+  font-family: 'CoreCircusPierrot2';
+  position: absolute;
+  width: 160/@rem;
+  height: 20/@rem;
+  line-height: 20/@rem;
+  display: block;
+  left: 123/@rem;
+  top: 6/@rem;
+  color: #eda949;
+  font-size: 18/@rem;
+  letter-spacing: -3/@rem;
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation: move1 0.65s  0.2s normal both;
+  animation: move1 0.65s  0.2s normal both;
+
+}
+.homePage-span2 {
+  position: absolute;
+  width: 160/@rem;
+  height: 26/@rem;
+  line-height: 26/@rem;
+  left: 126/@rem;
+  top: 30/@rem;
+  opacity: 0;
+  color: #eda949;
+  font-family: 'Courgette';
+  font-size: 0/@rem;
+  font-weight: 400/@rem;
+  letter-spacing: -3/@rem;
+  -webkit-animation: move2 0.4s linear 0.3s normal both;
+  animation: move2 0.4s linear 0.4s normal both;
+
+}
+.homePage-ren-box{
+  width: 100%;
+  position: absolute;
+  transform: translateY(-100%);
+}
+.homePage-ren {
+  width: 106/@rem;
+  height: 140/@rem;
+  margin: 0/@rem auto 0/@rem;
+  position: relative;
+  bottom: 0/@rem;
+}
+.homePage-ren-tou {
+  display: block;
+  position: absolute;
+  top: 0/@rem;
+  left: 26/@rem;
+  width: 52/@rem;
+  height: 65/@rem;
+  z-index: 5;
+  margin: 0/@rem auto;
+  -webkit-animation: ren-tou 0.25s linear infinite alternate;
+  animation: ren-tou 0.25s linear infinite alternate;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.homePage-ren-shen {
+  position: absolute;
+  top: 33/@rem;
+  left: 26/@rem;
+  width: 53/@rem;
+  height: 77/@rem;
+  z-index: 4;
+  transform-origin: 50%;
+  -webkit-animation: ren-shen 0.5s linear infinite alternate;
+  animation: ren-shen 0.5s linear infinite alternate;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.homePage-ren-left {
+  position: absolute;
+  top: 54/@rem;
+  left: 0/@rem;
+  width: 54/@rem;
+  height: 48/@rem;
+  z-index: 3;
+  transform-origin: 100% 20%;
+  -webkit-transform-origin: 100% 20%;
+  -webkit-animation: ren-lefts 1s linear infinite;
+  animation: ren-lefts 1s linear infinite;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.homePage-ren-right {
+  position: absolute;
+  top: 54/@rem;
+  right: 0/@rem;
+  width: 54/@rem;
+  height: 48/@rem;
+  z-index: 3;
+  transform-origin: 0 20%;
+  -webkit-transform-origin: 0 20%;
+  -webkit-animation: ren-rights 1s linear infinite 0.5s;
+  animation: ren-rights 1s linear infinite 0.5s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+.homePage-ren-legs {
+  position: absolute;
+  top: 94/@rem;
+  left: 24/@rem;
+  width: 58/@rem;
+  height: 47/@rem;
+  z-index: 3;
+  -webkit-animation: ren-legs 0.25s linear infinite alternate;
+  animation: ren-legs 0.25s linear infinite alternate;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.homePage-ren-ball {
+  position: absolute;
+  top: 104/@rem;
+  left: 34.5/@rem;
+  width: 37/@rem;
+  height: 37/@rem;
+  z-index: 6;
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: boy-ball 1s linear infinite;
+  animation: ren-balls 1s linear infinite;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.homePage-but{
+   width: 320/@rem;
+    height: 72/@rem;
+    background: #fad5a1;
+    position: absolute;
+    left: 0/@rem;
+    top: 100%;
+    transform: translateY(-100%);
+}
+.homePage-but-pic{
+    display: block;
+    width: 28/@rem;
+    height: 32/@rem;
+    margin: 12/@rem auto 0/@rem;
+}
+.homePage-but h3{
+    margin-top: 5/@rem;
+    color: #d8583a;
+    font-family: 'Oswald', 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 12/@rem;
+    font-weight: bold;
+    text-align: center;
+}
+/*end homePage*/
+/*userPage*/
+.userPage{
+    width: 320/@rem;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 7;
+    left: 0/@rem;
+    top: 0/@rem;
+    background: url(../../image/loadPage/userPage.gif);
+    background-size: 29/@rem 29/@rem;
+    transform: rotateZ(90deg);
+    transform-origin: top right;
+}
+.userPage-close{
+    width: 50/@rem;
+    height: 50/@rem;
+    line-height: 50/@rem;
+    font-size: 12/@rem;
+    position: absolute;
+    right: 0/@rem;
+    top: 0/@rem;
+    color: #fff;
+    background: #eda949;
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.userPage-denglu{
+    width: 250/@rem;
+    height: 100/@rem;
+    background: rgba(230,222,203,0.6);
+    margin: 130/@rem auto 0/@rem;
+    border: 2/@rem solid rgba(10,10,10,0.2);
+    border-radius: 10/@rem;
+    position: relative;
+}
+.userPage-denglu-txt{
+    width: 145/@rem;
+    height: 30/@rem;
+    background: rgba(0,0,0,0.7);
+    border-radius: 15/@rem;
+    padding-left: 15/@rem;
+    font-size: 12/@rem;
+    line-height: 30/@rem;
+    color: #fff;
+    margin-top: 12/@rem;
+    margin-left: 10/@rem;
+}
+.userPage-denglu-ball{
+    width: 65/@rem;
+    height: 65/@rem;
+    position: absolute;
+    right: 15/@rem;
+    top: 15/@rem;
+}
+.userPage-denglu h2{
+    position: absolute;
+    right: 8/@rem;
+    top: 35/@rem;
+    height: 20/@rem;
+    line-height: 20/@rem;
+    font-size: 18/@rem;
+    color: #eda949;
+    transform: skew(30deg) rotateZ(-15deg);
+    font-family: 'Oswald', 'Arial', 'Helvetica', 'sans-serif';
+    font-weight: bold;
+}
+.userPage-cont{
+    width: 320/@rem;
+    overflow: hidden;
+    margin-top: 40/@rem;
+}
+.userPage-cont img{
+    width: 294/@rem;
+    height: 200/@rem;
+    display: block;
+    margin: 0/@rem auto;
+}
+.userPage-but{
+    width: 320/@rem;
+    height: 42/@rem;
+    background: #f2f2f2;
+    position: absolute;
+    left: 0/@rem;
+    bottom: 0/@rem;
+}
+.userPage-but P{
+    height: 20/@rem;
+    line-height: 20/@rem;
+    font-size: 12/@rem;
+    color: #c1c1c1;
+    text-align: center;
+}
+.userPage-but div{
+    display: block;
+    width: 320/@rem;
+    overflow: hidden;
+    text-align: center;
+}
+.userPage-but div a{
+    display: inline-block;
+    line-height: 14/@rem;
+    padding: 2/@rem 6/@rem;
+    font-size: 12/@rem;
+    color: #db6a50;
+    text-align: center;
+}
+/*end userPage*/
+/*音乐*/
+.music{
+    width: 8rem;
+    height: 2rem;
+    margin: 10/@rem;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    overflow: hidden;
+}
+.music-music{
+    width:40/@rem;
+    height: 40/@rem;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 6;
+    -webkit-animation: music_music 0.7s linear  infinite;
+    animation: music_music 0.7s linear  infinite;
+    &.rotate {
+      -webkit-animation: rotateZ360 1.5s linear infinite;
+      animation: rotateZ360 1.5s linear infinite;
+    }
+}
+.music-jindu{
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+  height: 1.1rem;
+  position: absolute;
+  width: 6rem;
+  left: -2rem;
+  top: 50%;
+  z-index: 5;
+  opacity: 0;
+  transform: translateY(-50%);
+  //transition: all 3s linear;
+  display: none;
+}
+.music-jindu-1{
+    width: 15/@rem;
+    height: 15/@rem;
+    margin-top: 3/@rem;
+    display: block;
+    float: left;
+}
+.music-jindu-2{
+    width: 60/@rem;
+    height: 6/@rem;
+    background: #767676;
+    border-radius: 5/@rem;
+    float: left;
+    margin-left: 8/@rem;
+    margin-top: 8/@rem;
+    position: relative;
+}
+.music-jindu-3{
+    width: 12/@rem;
+    height: 12/@rem;
+    background: #fff;
+    border-radius: 10/@rem;
+    position: absolute;
+    top: -3/@rem;
+    left: 30/@rem;
+}
+.music-jindu-4{
+    width: 18/@rem;
+    height: 18/@rem;
+    display: block;
+    float: left;
+    margin-top: 2/@rem;
+    margin-left: 10/@rem;
+}
+/*end 音乐*/
+    
+   

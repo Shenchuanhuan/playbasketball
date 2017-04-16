@@ -1,0 +1,408 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+        //动态设置缩放比
+        var pixelRatio = 1/window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+',user-scalable=no">');
+        //设置rem
+        var html = document.getElementsByTagName('html')[0];
+        if (window.innerWidth > window.innerHeight) {
+            //横屏
+            html.style.fontSize =  window.innerHeight/16 + 'px';
+        }else {
+            html.style.fontSize = window.innerWidth/16 + 'px';
+        }
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/pickPage/index2.css"/>
+    <link rel="stylesheet" href="css/playPage/playPage2.css">
+    <link rel="stylesheet" href="css/playPage/playPage-animation.css">
+    <link rel="stylesheet" type="text/css" href="css/loadPage/loadPage.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animation.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-face.css"/>
+</head>
+<body>
+<div class="fame">
+    <!--loadPage s-->
+    <section class="loadPageBox">
+        <div class="loadPage">
+            <img class="loadPage-logo" src="image/loadPage/loadPage-logo.jpg" />
+            <img class="loadPage-ball" src="image/loadPage/loadPage-ball.png" />
+            <img class="loadPage-loading" src="image/loadPage/loadPage-loading.jpg" />
+        </div>
+        <div class="homePage">
+            <img class="homePage-logo" src="image/loadPage/homePage-logo.png" />
+            <div class="homePage-about">USER</div>
+            <div class="homePage-ziti">
+                <div class="homePage-img">It's</div>
+                <div class="homePage-span1">your road to</div>
+                <div class="homePage-span2">become famous</div>
+            </div>
+            <div class="homePage-but">
+                <div class="homePage-ren-box">
+                    <div class="homePage-ren">
+                        <img class="homePage-ren-tou" src="image/loadPage/boy_head.svg" />
+                        <img class="homePage-ren-shen" src="image/loadPage/boy_body.svg" />
+                        <img class="homePage-ren-left" src="image/loadPage/boy_arm_left.svg" />
+                        <img class="homePage-ren-right" src="image/loadPage/boy_arm_right.svg" />
+                        <img class="homePage-ren-legs" src="image/loadPage/boy_legs.svg" />
+                        <img class="homePage-ren-ball" src="image/loadPage/boy_ball.svg" />
+                    </div>
+                </div>
+                <img class="homePage-but-pic" src="image/loadPage/homePage-but.jpg" />
+                <h3>CHOOSE A PLAYER</h3>
+            </div>
+        </div>
+        <div class="userPage">
+            <div class="userPage-close">CLOSE</div>
+            <div class="userPage-denglu">
+                <input type="text" placeholder="请输入账号" class="userPage-denglu-txt"/>
+                <input type="password" placeholder="*****"  class="userPage-denglu-txt userPage-denglu-password"/>
+                <img class="userPage-denglu-ball" src="image/loadPage/loadPage-ball.png" />
+                <h2>start game</h2>
+            </div>
+            <div class="userPage-cont">
+                <img src="image/loadPage/userPage-zi.png" />
+            </div>
+            <div class="userPage-but">
+                <p>PROJEKT I WYKONANIE:</p>
+                <div>
+                    <a href="javascript:;">torpedov.com</a>
+                    <a href="javascript:;">piotrswierkowski.com</a>
+                    <a href="javascript:;">Jacek Janiczak</a>
+                </div>
+            </div>
+        </div>
+        <div class="music">
+            <div class="music-jindu" style="left: 0;">
+                <img class="music-jindu-1" src="image/loadPage/music-a-2.png"/>
+                <div class="music-jindu-2">
+                    <div class="music-jindu-3"></div>
+                </div>
+                <img class="music-jindu-4" src="image/loadPage/music-a-1.png" />
+            </div>
+            <img class="music-music" src="image/loadPage/music1.png" />
+        </div>
+
+        <audio src="src/Joosuc - Neva Lose(Cd Bonus Track).mp3"></audio>
+    </section>
+    <!--loadPage e-->
+    <!--游戏人物选择页pickPage s-->
+    <section class="pickPage">
+        <!--选模式页-->
+        <div id="modelPage">
+            <button class="revert">CLOSE</button>
+            <h1>
+                Choose Your<br />
+                Favorite Game Mode
+            </h1>
+            <div class="modelPageInner">
+                <a href="javascript:;">Free Mode</a>
+                <a href="javascript:;" class="selected">Chanllenge</a>
+                <span>START</span>
+            </div>
+            <div class="modelPage_ball">
+                <img src="image/pickPage/modelPage_ball.svg" />
+            </div>
+        </div>
+        <!--人物详情页-->
+        <div id="pickPage-player">
+            <button>CLOSE</button>
+            <div class="player-details">
+                <h1>BOB</h1>
+                <h3>POINT GUARD</h3>
+                <p>A SMALL MAN WITH A HUGE PASSION TO BASKETBALL</p>
+                <div class="player-num">
+                    #<strong>1</strong>
+                </div>
+            </div>
+            <div class="player-ico">
+                <img src="image/pickPage/pickPage-boy1.svg" />
+            </div>
+        </div>
+        <!--有关于按钮-->
+        <div class="pickPage-about">ABOUT</div>
+        <!--标题-->
+        <h2>
+            GET
+            <span>Ａ   ＰＬＡＹＥＲ</span>
+        </h2>
+        <!--球员-->
+        <div class="pickPage-select">
+            <div>
+                <figure class="player-1">
+                    <figcaption>BOM</figcaption>
+                    <img src="image/pickPage/pickPage-boy1.svg"/>
+                </figure>
+            </div>
+            <div>
+                <figure class="player-2">
+                    <figcaption>ROM</figcaption>
+                    <img src="image/pickPage/pickPage-boy2.svg"/>
+                </figure>
+            </div>
+            <div>
+                <figure class="player-3">
+                    <figcaption>SAM</figcaption>
+                    <img src="image/pickPage/pickPage-boy3.svg"/>
+                </figure>
+            </div>
+            <div>
+                <figure class="player-4">
+                    <figcaption>JIM</figcaption>
+                    <img src="image/pickPage/pickPage-boy4.svg"/>
+                </figure>
+            </div>
+            <div>
+                <figure class="player-5">
+                    <figcaption>TIM</figcaption>
+                    <img src="image/pickPage/pickPage-boy5.svg"/>
+                </figure>
+            </div>
+        </div>
+        <!--底部导航-->
+        <nav>
+            <a href="javascript:;" class="try">BACK TO TOP</a>
+            <a href="javascript:;" class="gameMode">GAME　MODE</a>
+        </nav>
+    </section>
+    <!--游戏人物选择页pickPage e-->
+    <!--投篮游戏页面playPage s-->
+    <section class="playPage">
+        <div class="playPage-wrap" data-player="1">
+            <!--计分板-->
+            <div class="game-info">
+                <p class="name">
+                    <span class="player-1">Bob</span>
+                    <span class="player-2">Rob</span>
+                    <span class="player-3">Sam</span>
+                    <span class="player-4">Jim</span>
+                    <span class="player-5">Tim</span>
+                </p>
+                <p class="points">
+                    <span class="score">00</span>
+                </p>
+                <p class="throws">
+                </p>
+                <div class="back">
+                    <div class="musicPlayer">
+                        <img src="image/playPage/music_pole.png" alt="" class="pole">
+                        <div class="cd">
+                            <img src="image/music/6012129581107821.jpg" alt="" class="musicImg">
+                        </div>
+                        <div class="music-control">
+                            <a href="javascript:;" class="prev">
+                                <img src="image/playPage/music-p-2.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="cont">
+                                <img src="image/playPage/music-p-4.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="next">
+                                <img src="image/playPage/music-p-3.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--倒计时-->
+            <div class="countDown">
+                <!--倒计时开始时给countDown添加start类，效果为白线开始转动，1s转一圈-->
+                <span class="time">0</span>
+                <div class="line"></div>
+            </div>
+            <!--群演-->
+            <div class="fans">
+                <img src="image/playPage/bg/fan_1.svg" alt="" class="fan fan-1">
+                <img src="image/playPage/bg/fan_2.svg" alt="" class="fan fan-2">
+                <img src="image/playPage/bg/fan_3.svg" alt="" class="fan fan-3">
+                <img src="image/playPage/bg/fan_1.svg" alt="" class="fan fan-4">
+                <img src="image/playPage/bg/fan_2.svg" alt="" class="fan fan-5">
+                <img src="image/playPage/bg/fan_3.svg" alt="" class="fan fan-6">
+                <img src="image/playPage/bg/fan_2.svg" alt="" class="fan fan-7">
+                <img src="image/playPage/bg/fan_3.svg" alt="" class="fan fan-8">
+                <img src="image/playPage/bg/fan_1.svg" alt="" class="fan fan-9">
+                <img src="image/playPage/bg/fan_2.svg" alt="" class="fan fan-10">
+            </div>
+            <!--球场地板-->
+            <div class="court">
+                <img src="image/playPage/bg/field.svg" alt="">
+            </div>
+            <!--篮架&player-->
+            <figure class="barket">
+                <!--进球给figure标签添加 goal类，会有篮网拉伸的效果-->
+                <img src="image/playPage/barket/basket_field2.png" alt="" class="bk-field">
+                <img src="image/playPage/barket/basket_net.png" alt="" class="bk-net">
+                <img src="image/playPage/barket/basket_bar.svg" alt="" class="bk-bar">
+                <!--开始投篮时给ball-wrapper添加prepare类,效果为篮球和手臂下沉动作-->
+                <div class="ball-wrapper">
+                    <img src="image/playPage/ball.png" class="ball">
+                </div>
+                <!--投篮时给player添加throw类，效果为运动员下蹲后出手-->
+                <div class="player">
+                    <div class="legs"></div>
+                    <div class="hands"></div>
+                    <div class="body"></div>
+                </div>
+            </figure>
+        </div>
+        <!--摇杆-->
+        <div class="controlBox">
+            <div class="control">
+                <div class="ball-wrap">
+                    <img src="image/playPage/control_ball.png" class="control-ball">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--投篮游戏页面playPage e-->
+    <!--得分榜页 s-->
+    <section class="scorePageBox" style="display: none;">
+        <div id="scorePage">
+            <!--<button>CLOSE</button>-->
+            <h3>
+                YOU CAN BE<br/>
+                A BASKETBALLER
+            </h3>
+            <p class="scorePageYc">This is your score</p>
+            <p class="scorePagePt">1POINT = 5FANS</p>
+            <div class="scorePageAccount">
+                <div class="account">
+                    <p class="accountPos1">
+							<span>
+								<strong>0</strong>
+							</span>
+                        <span>
+								<strong>0</strong>
+							</span>
+                    </p>
+                    <p class="accountPos2">pts</p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="rank">RANK</a>
+    </section>
+    <!--得分榜页 e-->
+    <!--排行榜页 s-->
+    <section class="rankPageBox" style="display: none;">
+        <div id="rankPage">
+            <div class="rankPageInner">
+                <h1>SHOW YOUR SKILLS ON A COURT!</h1>
+                <h3>MARCIN GORTAT'S MG13 FOUNDATION</h3>
+                <p>supports young talents</p>
+                <a href="javascript:;" class="rankPageMg">VISIT MG13 FOUNDATION</a>
+                <a href="javascript:;" class="rankPageMc">VISIT MGCIN GORTAT</a>
+                <a href="javascript:;" class="rankPageTw">Tweet</a>
+            </div>
+            <nav>
+                <a href="javscript:;">BACK TO TOP</button>
+                    <a href="javscript:;">PLAY GAME</a>
+            </nav>
+            <div class="rankPageCup">
+                <img src="image/pickPage/rankPageCup1.svg" />
+            </div>
+            <div class="rankPageGt">
+                <img src="image/pickPage/rankPageGt.svg" />
+            </div>
+        </div>
+    </section>
+    <!--排行榜页 e-->
+</div>
+<script src="js/loadPage/loadPage.js"></script>
+<script src="js/musicData.js"></script>
+<script src="js/playPage/music.js"></script>
+<script src="js/pickPage/data.js"></script>
+<script src="js/playPage/playPage.js"></script>
+<script src="js/orientation.js"></script>
+<script src="js/tween.js"></script>
+<script src="js/mTweenPlus.js"></script>
+<script>
+	/* begin  -Chuan
+	*/
+	//var html = document.getElementsByTagName("html")[0];
+    var fame = document.querySelector('.fame');
+    //模式选择    1: 即自由投篮模式  2：挑战模式
+    var modes = document.querySelectorAll('.modelPageInner a');
+	var playPageWrap = document.querySelector('.playPage-wrap');//投球页
+	var barket = document.querySelector('.playPage-wrap figure');//篮网
+		barket.onOff = true;
+    var ball = document.querySelector('.playPage-wrap .ball-wrapper');
+    var ballImg = ball.getElementsByTagName("img")[0];
+    var ballControll = document.querySelector('.control .ball-wrap img');
+    var ts = 0; //水平方向的运动时间
+    var th1 = 0; //垂直方向的上升至最高点的时间
+    var th2 = 0; //垂直方向：最高点到落地的时间
+    var throwStatus = false;//开关:用于控制球未回到手中时再投无效
+	var score = 0;
+	var high = false;
+	var point = document.querySelector('.playPage-wrap .game-info .points span');//计分板
+	var counts = document.querySelector('.countDown .time');
+	var countDown = document.querySelector('.playPage-wrap .countDown');
+    var timer;      //倒计时定时器
+	
+	/*end*/
+
+    //可视区高度
+    var wdHeight = window.innerHeight;
+
+    //页面初始化
+    initialDom();
+    function initialDom() {
+//        alert(document.body.parentNode.className);
+        //设置body高度
+        document.body.style.height = window.innerHeight + 'px';
+        //给每一版页面设置高度 = 可视区高度 相当于是100%
+        var section = document.getElementsByTagName('section');
+        if (document.body.parentNode.className == 'landscape') {
+            for (var i = 0;i < section.length;i++) {
+                section[i].style.height = window.innerWidth + 'px';
+                wdHeight = window.innerWidth;
+            }
+        }else {
+            for (var i = 0;i < section.length;i++) {
+                section[i].style.height = window.innerHeight + 'px';
+                wdHeight = window.innerHeight;
+            }
+        }
+
+
+    }
+/*
+		60秒倒时计 
+	*/
+	
+var cDown = function (){
+    clearInterval(timer);
+	counts.innerHTML = 60;
+	timer = setInterval(function(){
+		if(countDown.className == 'countDown'){
+			countDown.className += ' start';
+		}
+        counts.innerHTML -= 1;
+        if(counts.innerHTML == 0){
+            counts.innerHTML = 0;
+            countDown.className = 'countDown';
+            clearInterval(timer);
+            //打开得分页
+            setTimeout(function () {
+                //先显示得分页
+                opeaScorePage(1);
+                changePage('next');
+                getScore();
+            },1000);
+        }
+	},1000);
+};
+
+</script>
+<script src="js/common.js"></script>
+<script src="js/basic.js"></script>
+<script src="js/pickPage/index2.js"></script>
+<script src='js/game.js'></script>
+<script src='js/tween2.js'></script>
+<script src='js/animation.js'></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+@rem: 40rem;
+//fans
+@-webkit-keyframes fan-1 {
+  0%   {-webkit-transform: translateY(0px) rotateZ(-2deg)}
+  50%  {-webkit-transform: translateY(10px) rotateZ(0deg)}
+  100% {-webkit-transform: translateY(0px) rotateZ(4deg)}
+}
+@keyframes fan-1 {
+  0%   {transform: translateY(0px) rotateZ(-2deg)}
+  50%  {transform: translateY(10px) rotateZ(0deg)}
+  100% {transform: translateY(0px) rotateZ(4deg)}
+}
+@-webkit-keyframes fan-2 {
+  0%   {-webkit-transform: rotateZ(-6deg)}
+  100% {-webkit-transform: rotateZ(12deg)}
+}
+@keyframes fan-2 {
+  0%   {transform: rotateZ(-8deg)}
+  100% {transform: rotateZ(12deg)}
+}
+@-webkit-keyframes fan-3 {
+  0%   {-webkit-transform: translateY(0px) rotateZ(-10deg)}
+  25%  {-webkit-transform: translateY(-10px) rotateZ(5deg)}
+  50%  {-webkit-transform: translateY(-10px) rotateZ(0deg)}
+  75%  {-webkit-transform: translateY(-10px) rotateZ(5deg)}
+  100% {-webkit-transform: translateY(0px) rotateZ(-10deg)}
+}
+@keyframes fan-3 {
+  0%   {transform: translateY(0px) rotateZ(-10deg)}
+  25%  {transform: translateY(-10px) rotateZ(5deg)}
+  50%  {transform: translateY(-10px) rotateZ(0deg)}
+  75%  {transform: translateY(-10px) rotateZ(5deg)}
+  100% {transform: translateY(0px) rotateZ(-10deg)}
+}
+@-webkit-keyframes fan-4 {
+  0%   {-webkit-transform: translateY(0px) rotateZ(-2deg) scaleX(-1)}
+  50%  {-webkit-transform: translateY(10px) rotateZ(0deg) scaleX(-1)}
+  100% {-webkit-transform: translateY(0px) rotateZ(4deg) scaleX(-1)}
+}
+@keyframes fan-4 {
+  0%   {transform: translateY(0px) rotateZ(-2deg) scaleX(-1)}
+  50%  {transform: translateY(10px) rotateZ(0deg) scaleX(-1)}
+  100% {transform: translateY(0px) rotateZ(4deg) scaleX(-1)}
+}
+@-webkit-keyframes fan-5 {
+  0%   {-webkit-transform: translateY(0px) rotateZ(-10deg)}
+  25%  {-webkit-transform: translateY(-10px) rotateZ(5deg)}
+  50%  {-webkit-transform: translateY(-10px) rotateZ(0deg)}
+  75%  {-webkit-transform: translateY(-10px) rotateZ(5deg)}
+  100% {-webkit-transform: translateY(0px) rotateZ(-10deg)}
+}
+@keyframes fan-5 {
+  0%   {transform: translateY(0px) rotateZ(-10deg)}
+  25%  {transform: translateY(-10px) rotateZ(5deg)}
+  50%  {transform: translateY(-10px) rotateZ(0deg)}
+  75%  {transform: translateY(-10px) rotateZ(5deg)}
+  100% {transform: translateY(0px) rotateZ(-10deg)}
+}
+@-webkit-keyframes fan-6 {
+  0%   {-webkit-transform: rotateZ(-6deg) scaleX(-1)}
+  100% {-webkit-transform: rotateZ(12deg) scaleX(-1)}
+}
+@keyframes fan-6 {
+  0%   {transform: rotateZ(-8deg) scaleX(-1)}
+  100% {transform: rotateZ(12deg) scaleX(-1)}
+}
+//ball&player
+@-webkit-keyframes ball-prepare {
+  0%   {-webkit-transform: translateY(50/@rem)}
+  100% {-webkit-transform: translateY(0/@rem)}
+}
+@keyframes ball-prepare {
+  0%   {transform: translateY(50/@rem)}
+  100% {transform: translateY(0/@rem)}
+}
+@-webkit-keyframes hands-prepare {
+  0%   {-webkit-transform: translate(-50%, 30/@rem)}
+  100% {-webkit-transform: translate(-50%, 0/@rem)}
+}
+@keyframes hands-prepare {
+  0%   {transform: translate(-50%, 30/@rem)}
+  100% {transform: translate(-50%, 0/@rem)}
+}
+@-webkit-keyframes throw-body {
+  0%   {-webkit-transform: translate(-50%, 0/@rem)}
+  50%  {-webkit-transform: translate(-50%, 10/@rem)}
+  70%  {-webkit-transform: translate(-50%, -20/@rem)}
+  100% {-webkit-transform: translate(-50%, 0/@rem)}
+}
+@keyframes throw-body {
+  0%   {transform: translate(-50%, 0/@rem)}
+  50%  {transform: translate(-50%, 10/@rem)}
+  70%  {transform: translate(-50%, -20/@rem)}
+  100% {transform: translate(-50%, 0/@rem)}
+}
+@-webkit-keyframes throw-legs {
+  0%   {-webkit-transform: translate(-50%, 0/@rem)}
+  40%  {-webkit-transform: translate(-50%, -20/@rem)}
+  100% {-webkit-transform: translate(-50%, 0/@rem)}
+}
+@keyframes throw-legs {
+  0%   {transform: translate(-50%, 0/@rem)}
+  40%  {transform: translate(-50%, -20/@rem)}
+  100% {transform: translate(-50%, 0/@rem)}
+}
+@-webkit-keyframes throw-hands {
+  0%   {-webkit-transform: translate(-50%, 0/@rem)}
+  10%  {-webkit-transform: translate(-50%, 10/@rem)}
+  15%  {-webkit-transform: translate(-50%, -30/@rem)}
+  40%  {-webkit-transform: translate(-50%, 0/@rem)}
+  60%  {-webkit-transform: translate(-50%, -10/@rem)}
+  80%  {-webkit-transform: translate(-50%, 0/@rem)}
+  90%  {-webkit-transform: translate(-50%, -10/@rem)}
+  100% {-webkit-transform: translate(-50%, 0/@rem)}
+}
+@keyframes throw-hands {
+  0%   {transform: translate(-50%, 0/@rem)}
+  10%  {transform: translate(-50%, 10/@rem)}
+  15%  {transform: translate(-50%, -30/@rem)}
+  40%  {transform: translate(-50%, 0/@rem)}
+  60%  {transform: translate(-50%, -10/@rem)}
+  80%  {transform: translate(-50%, 0/@rem)}
+  90%  {transform: translate(-50%, -10/@rem)}
+  100% {transform: translate(-50%, 0/@rem)}
+}
+//barket
+@-webkit-keyframes basket-net {
+  0%   {-webkit-transform: scaleY(1)}
+  30%  {
+    bottom: 13.1rem;
+    -webkit-transform: scaleY(1.5);
+  }
+  60%  {
+    bottom: 13.3rem;
+    -webkit-transform: scaleY(0.8)
+  }
+  75%  {-webkit-transform: scaleY(1.1)}
+  90%  {-webkit-transform: scaleY(0.9)}
+  100% {-webkit-transform: scaleY(1)}
+}
+@keyframes basket-net {
+  0%   {transform: scaleY(1)}
+  30%  {
+    bottom: 13.1rem;
+    transform: scaleY(1.5)
+  }
+  60%  {
+    bottom: 13.3rem;
+    transform: scaleY(0.8)
+  }
+  75%  {transform: scaleY(1.1)}
+  90%  {transform: scaleY(0.9)}
+  100% {transform: scaleY(1)}
+}

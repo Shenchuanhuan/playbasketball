@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'CoreCircusPierrot2';
+    src: url('../fonts/2DA5DD_0_0.eot');
+    src: url('../fonts/2DA5DD_0_0d41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/2DA5DD_0_0.woff2') format('woff2'),
+         url('../fonts/2DA5DD_0_0.woff') format('woff'),
+         url('../fonts/2DA5DD_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url('../fonts/Courgette-Regular-webfont.eot');
+    src: url('../fonts/Courgette-Regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Courgette-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Courgette-Regular-webfont.woff') format('woff'),
+         url('../fonts/Courgette-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular-webfont.eot');
+    src: url('../fonts/Oswald-Regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Oswald-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Oswald-Regular-webfont.woff') format('woff'),
+         url('../fonts/Oswald-Regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold-webfont.eot');
+    src: url('../fonts/Oswald-Bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Oswald-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/Oswald-Bold-webfont.woff') format('woff'),
+         url('../fonts/Oswald-Bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quantico';
+    src: url('../fonts/Quantico-Bold-webfont.eot');
+    src: url('../fonts/Quantico-Bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Quantico-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/Quantico-Bold-webfont.woff') format('woff'),
+         url('../fonts/Quantico-Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

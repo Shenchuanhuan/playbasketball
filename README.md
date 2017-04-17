@@ -9,9 +9,11 @@
 	-	npm http-server -p 8888
 	-	掏出手机，输入：IP：8888
 	-	哈哈哈，欢迎进入篮球的世界：史上最难玩的投篮小游戏
-	-	如果觉得游戏太垃圾了，欢迎@不想当翻译的死宅不是好程序媛 投诉，【虽然投诉也没什么用 @ v @
+	-	如果觉得游戏太垃圾了，欢迎@不想当翻译的死宅不是好程序媛 反馈~
 	
 ### 项目小结
+
+#####	问题及解决方案
 -	在一些浏览器或设备上，当transform和z-index在一起使用时会发生异样，造成z-index失灵。
 	>引起这个问题的原因：元素设置了transform属性后，会创建一个新的 stacking context（有人译为'层叠上下文'）。
 
@@ -44,5 +46,8 @@
 
 -	移动端audio，播放audio最好是在播放器加载完成返回“canplay”、“canplaythrough”状态后再进行播放。
 
-### 在查找资料时遇到的一些可能有用的资料存储
+### 相关参考资料
 -	[移动端click事件延迟300ms到底是怎么回事，该如何解决？](http://www.jshacker.com/note.asp?pageId=3585)
+-	[您有一份来自MDN的requestAnimationFrame的API调用方法，请查收](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame)
+-	[CSS3 Transform 引起的 z-index "失效"](https://segmentfault.com/q/1010000002480824)
+-	[web app变革之rem](http://isux.tencent.com/web-app-rem.html)
